@@ -45,7 +45,7 @@ CFLAGS+=-std=gnu99 -Wall -Wextra -g $(INCLUDES) -DVERSION=\"$(shell git describe
 LDFLAGS+=-L./libuwifi
 
 ifeq ($(DEBUG),1)
-	CFLAGS+=-DDEBUG=1
+	CFLAGS+=-DDO_DEBUG=1
 endif
 
 DESTDIR?=/usr/local
